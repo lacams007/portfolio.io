@@ -1,0 +1,659 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Yeon+Sung&display=swap');
+.skip_nav {display: none;}
+
+
+/* 공통 */
+html,body {position: relative;height: 100%;}
+.container {width: 90%;margin: auto;}
+.blind {display: block;width: 0;height: 0;overflow: hidden;}
+.clrfix::after {content: "";display: block;clear: both;}
+
+main h2 {
+  margin-top: 200px;
+  margin-bottom: 70px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+main h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+
+/* 헤더 */
+header {
+  height: 90px;
+  background: #fff;
+}
+header h1 {
+  float: left;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+header nav {line-height: 90px;}
+header nav #gnb {float: right;}
+header nav #gnb li {
+  float: left;
+  margin-right: 50px;
+  font-weight: 700;
+}
+header nav .g1 {display: none;}
+
+header nav .allmenuWrap>.a1 {display: none;}
+header nav .allmenuWrap button.close {display: none;}
+
+
+/* 메인 */
+main .visualWrap{
+  width: 100%;
+}
+main .visualWrap .visualView {
+  width: 100%;
+  height: 620px;
+  overflow: hidden;
+}
+main .visualWrap .visualView .visualGroup{
+  width: 300%;
+  height: 620px;
+  transition: all 0.8s;
+}
+
+main .visualWrap .visualView .visualGroup li {
+  float: left;
+  /* width: 100vw; */
+  width: calc(100% / 3);
+  /* height: 50vh; */
+  height: 620px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+/* main .visualWrap .visualView .visualGroup li img {} */
+main .visualWrap .visualView .visualGroup .vis1 {background-image: url(../img/pc_partytime.png);}
+main .visualWrap .visualView .visualGroup .vis2 {background-image: url(../img/pc_newyear_tiger.png);}
+main .visualWrap .visualView .visualGroup .vis3 {background-image: url(../img/pc_christmas.jpg);}
+
+main .visualWrap .container{
+  position: relative;
+}
+main .visualWrap .paging {
+  position: absolute;
+  margin-top: -50px;
+  top: 0;right: 0;
+  height: 20px;
+}
+main .visualWrap .paging li{
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .visualWrap .paging .sel {
+  background: #fea30b;
+}
+
+
+.swiper {
+  width: 100%;
+  /* height: 100%; */
+  height: 36%;
+  background: #fff;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+main .accordionWrap {}
+main .accordionWrap .acc {}
+main .accordionWrap .acc h3{
+  height: 70px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-indent: 25px;
+  background: #ededed;
+  line-height: 70px;
+  cursor: pointer;
+  border-top: 1px dotted #fff;
+  /* box-sizing: border-box; */
+  transition: all 0.8s;
+}
+main .accordionWrap .acc_on h3 {
+  color: #fff;
+  background: #0a253e;
+}
+main .accordionWrap .acc h3 i {
+  margin-right: 25px;
+  float: right;
+  line-height: 70px;
+  font-size: 20px;
+}
+main .accordionWrap .acc .accList {
+  display: none;
+}
+main .accordionWrap .acc_on .accList {
+  display: block;
+}
+main .accordionWrap .acc_on .accList ul {
+  margin: 0 auto;
+  height: 160px;
+  line-height: 40px;
+  font-weight: 600;
+}
+main .accordionWrap .acc .accList li {
+  float: left;
+  /* width: 33.33333%; */
+  width: 32.33333%;
+  height: 160px;
+  padding-top: 10px;
+  padding-left: 1%;
+  text-align: left; 
+}
+
+main .accordionWrap .acc .accList li a {
+  display: block;
+  height: 150px;
+  border-right: 1px solid #DDD;
+}
+main .accordionWrap .acc .accList li:last-child a {
+  border: none;
+}
+main .accordionWrap .acc .accList li .title {
+  text-align: left;
+}
+main .accordionWrap .acc .accList li .date {
+  line-height: 80px;
+  text-align: left;
+  color: #999;
+}
+
+main .accordionWrap .acc .accList li:hover{
+  text-decoration: underline;
+}
+main .accordionWrap .acc .accList li:hover .date {
+  text-decoration: underline;
+}
+main .accordionWrap .acc .moreIcoPlus{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 15px 0;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #0a253e;
+  border-radius: 40px;
+}
+
+
+
+
+
+main .bannerWrap {margin-top: 200px;}
+main .bannerWrap .appWrap {
+  background: #ffeea8;
+}
+main .bannerWrap .appWrap .app {
+  position: relative;
+  width: calc((100% / 12) * 8);
+  margin: 0 auto;
+  padding-top: 50px;
+}
+main .bannerWrap .appWrap .app p {
+  float: right;
+  line-height: 80px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+main .bannerWrap .appWrap .app p span {
+  font-size: 32px;
+}
+main .bannerWrap .appWrap .app p em {
+  font-weight: 700;
+  font-size: 48px;
+}
+main .bannerWrap .appWrap .app button {
+  position: absolute;
+  right: 170px;
+  bottom: 60px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+main .bannerWrap .appWrap .app button:hover{
+  background: #f6e04f;
+}
+main .bannerWrap .quickWrap {
+  background: #eaeaea;
+}
+main .bannerWrap .quickWrap .quick {
+  height: 180px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+main .bannerWrap .quickWrap .quick a {
+  float: left;
+  /* height: 180px; */
+  height: 60%;
+  margin: 0 10%;
+  padding: 0 3.75%;
+}
+main .bannerWrap .quickWrap .quick a img{
+  display: block;
+  padding-bottom: 10px;
+}
+main .bannerWrap .quickWrap .quick a span{
+  margin-left: -5px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  color: #0a253e;
+}
+main .bannerWrap .quickWrap .quick a:nth-child(1) span{margin-left: 5px;}
+
+
+
+
+/* 푸터 */
+footer {
+  padding: 40px 0;
+  background: #0a253e;
+  color: #fff;
+}
+footer a {float: left;}
+footer .container>a>img {
+  float: left;
+  padding: 10px 100px 0px 100px;
+}
+
+footer .footerMenu {float: left;}
+footer .footerMenu li {font-weight: 700;}
+
+footer .container {position: relative;}
+footer .sns {
+  position: absolute;
+  right: 0;top: 50%;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+  color: #fff;
+}
+footer .sns li {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+footer .sns li a {
+  width: 30px;
+  height: 30px;
+}
+footer .sns li a img {
+  width: 30px;
+  height: 30px;
+}
+
+footer address {
+  margin-top: 20px;
+  width: calc((100% / 12) * 10);
+  line-height: 25px;
+  text-align: left;
+}
+footer address br.mob {
+  display: none;
+}
+footer p {
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+
+/* PC */
+@media screen and (min-width: 1280px) {
+  .container {min-width: 1280px;max-width: 1530px;}
+
+  header nav .allmenuWrap>button {display: none;}
+  main .visualWrap .visualView img {width: 100%;}
+}
+
+
+
+
+
+/* Tab */
+@media screen and (min-width: 621px) and (max-width: 1279px) {
+  
+  header nav #gnb {display: none;}
+  /* header nav .allmenuWrap {display: block;} */
+  header nav .allmenuWrap button {
+    float: right;
+    margin-top: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;right: 0;
+  }
+  /* header nav .allmenuWrap {left: 0;top: 0;right: 0;bottom: 0;} */
+  header nav .allmenuWrap img {width: 30px;height: 30px;padding-top: 32%;}
+  header nav .allmenuWrap .a1 {}
+  header nav .allmenuWrap .a1>li {
+    font-weight: 600;
+  }
+  header nav .allmenuWrap .a1 .a2 {}
+
+  main h2 {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    font-size: 28px;
+  }
+  main h3 {font-size: 16px;}
+
+  main .visualWrap .visualView {width: 100%;height: 620px;}
+  main .visualWrap .paging {
+    margin-top: -30px;
+    height: 15px;
+  }
+  main .visualWrap .paging li {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+  }
+
+  main .slideWrap .slideView {width: 100%;}
+  main .slideWrap .slideView .slideGroup {width: 200%;}
+
+
+  main .accordionWrap {}
+  main .accordionWrap .acc h3{
+    height: 50px;
+    line-height: 50px;text-indent: 20px;
+    font-size: 14px;
+  }
+  main .accordionWrap .acc h3 i {line-height: 50px;}
+  main .accordionWrap .acc_on .accList ul {height: 210px;}
+  main .accordionWrap .acc .accList li {
+    width: 31.3333%;
+    height: 200px;
+    padding: 10px 1% 0 1%;
+    font-size: 14px;
+  }
+  main .accordionWrap .acc .accList li a {height: 200px;}
+  main .accordionWrap .acc .accList li .title {}
+  main .accordionWrap .acc .accList li .content {}
+  main .accordionWrap .acc .accList li .date {
+    margin-left: 10px;
+    line-height: 20px; 
+  } 
+
+
+
+  main .bannerWrap {margin-top: 120px;}
+  main .bannerWrap .appWrap .app p  {float: none;line-height: 40px;}
+  main .bannerWrap .appWrap .app p span {
+    font-size: 20px;
+  }
+  main .bannerWrap .appWrap .app p em {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  main .bannerWrap .appWrap .app button {
+    right: 0;
+    bottom: 30%;
+  }
+
+  main .bannerWrap .quickWrap .quick {width: 100%;margin-left: 0;}
+  main .bannerWrap .quickWrap .quick a {margin: 0px 10%;padding: 20px;}
+  main .bannerWrap .quickWrap .quick a img {width: 90%;}
+  main .bannerWrap .quickWrap .quick a span {font-size: 16px;}
+  main .bannerWrap .quickWrap .quick a:nth-child(1) span {margin-left: 6px;}
+
+ 
+  footer a {float: left;}
+  footer .container {position: relative;}
+  footer .container>a {width: 20%;}
+  footer .container>a>img {float: left;padding: 0 20%  30px 20%;}
+  footer .footerMenu {float: left;}
+  footer .footerMenu li {font-weight: 700;}
+  footer .sns {
+    position: absolute;
+    right: 0;top: 50%;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    color: #fff;
+  }
+  footer .sns li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  footer .sns li a {
+    width: 30px;
+    height: 30px;
+  }
+  footer .sns li a img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  footer address {
+    margin-top: 20px;
+    width: calc((100% / 12) * 10);
+    line-height: 25px;
+    text-align: left;
+  }
+  footer address br.mob {
+    display: none;
+  }
+  footer p {
+    margin-top: 20px;
+    line-height: 20px;
+  }
+}
+
+
+
+
+
+/* Mob */
+@media screen and (max-width: 620px) {
+  header nav #gnb {display: none;}
+  header h1 img {width: 80%;background-size: contain;}
+
+  
+  main h2 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  main h3 {font-size: 14px;}
+
+
+  header nav #gnb {display: none;}
+  /* header nav .allmenuWrap {display: block;} */
+  header nav .allmenuWrap button {
+    float: right;
+    margin-top: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  main .visualWrap .visualView {width: 100%;}
+  main .visualWrap .visualView .visualGroup {}
+  main .visualWrap .visualView .visualGroup li {}
+  main .visualWrap .visualView .visualGroup .vis1 {background-image: url(../img/mob_partytime.jpg);}
+  main .visualWrap .visualView .visualGroup .vis2 {background-image: url(../img/mob_newyear_tiger.png);}
+  main .visualWrap .visualView .visualGroup .vis3 {background-image: url(../img/mob_christmas.jpg);}
+  main .visualWrap .paging {
+    margin-top: -20px;
+    height: 10px;
+  }
+  main .visualWrap .paging li {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+
+  main .slideWrap .slideView {    
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .slideWrap .slideView .slideGroup {width: 600%;}
+  main .slideWrap .slideView .slideGroup li {width: calc(100% / 6);}
+  main .slideWrap .slideView .slideGroup li img {width: 100%;padding-left: 60px;}
+  main .slideWrap .slideView .slideGroup li span {padding-left: 100px;}
+  main .slideWrap .slideView .btns {margin-top: -200px;}
+/* .btn를 .slideView 바깥으로 뺄지 고민중 (.slideView -> overflow : hidden; 처리 예정)*/
+
+  main .accordionWrap {}
+  main .accordionWrap .acc h3{
+    height: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-indent: 15px;
+    background: #ededed;
+    line-height: 40px;
+    /* box-sizing: border-box; */
+    transition: all 0.8s;
+  }
+  main .accordionWrap .acc_on h3 {
+    color: #fff;
+    background: #0a253e;
+  }
+  main .accordionWrap .acc h3 i {
+    margin-right: 15px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  main .accordionWrap .acc_on .accList ul {
+    width: 100%;
+    height: 360px;
+    line-height: 20px;
+    overflow: hidden;
+  }
+  main .accordionWrap .acc .accList li {
+    width: 100%;
+    height: 100px;
+    /* margin-left: 10px; */
+    padding: 10px 0;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  main .accordionWrap .acc .accList li a {
+    height: 100px;
+    border-right: none;
+    border-bottom: 1px solid #DDD;
+  }
+  main .accordionWrap .acc .accList li:last-child a {
+    border: none;
+  }
+  main .accordionWrap .acc .accList li .title {
+    margin-left: 10px;
+    line-height: 30px;
+  }
+  main .accordionWrap .acc .accList li .content {
+    margin-left: 10px;
+    line-height: 30px;
+  }
+  main .accordionWrap .acc .accList li .date {
+    margin-left: 10px;
+    line-height: 30px; 
+  }
+  main .accordionWrap .acc .moreIcoPlus {
+    width: 150px;
+    font-size: 14px;
+    padding: 10px 0;
+    border-radius: 20px;
+  }
+  
+
+
+
+  main .bannerWrap {margin-top: 100px;}
+  main .bannerWrap .appWrap .app {width: 100%;text-align: center;}
+  main .bannerWrap .appWrap .app p  {float: none;line-height: 30px;}
+  main .bannerWrap .appWrap .app p span {font-size: 14px;}
+  main .bannerWrap .appWrap .app p em {font-size: 18px;}
+  main .bannerWrap .appWrap .app button { position: static;margin: 10px 0;}
+  main .bannerWrap .appWrap img {display: block;margin: auto; width: 50%;}
+
+  main .bannerWrap .quickWrap .quick {width: 100%;margin-left: 0;}
+  main .bannerWrap .quickWrap .quick a {margin: 0px 8%;padding: 0;}
+  main .bannerWrap .quickWrap .quick a img {width: 80%;}
+  main .bannerWrap .quickWrap .quick a span {font-size: 14px;}
+  main .bannerWrap .quickWrap .quick a:nth-child(1) span {margin-left: 6px;}
+  
+
+  footer {}
+  footer .container>a {width: 100%;}
+  footer .container>a>img {width: 20%; margin: 0 auto; padding: 0 0 20px 40%;}
+  footer .footerMenu {width: 100%;margin-top: 20px;}
+  footer .footerMenu li {width: inherit;text-align: center;margin-bottom: 20px;}
+  footer .footerMenu li>a {float: none;}
+  footer .sns {
+    float: none;
+    position: static;
+    clear: both;
+    width: auto;
+    height: 50px;
+    padding: 0 30%;
+    text-align: center;
+  }
+  footer .sns li {margin: 10px 15px auto;width: 15%;}
+  footer address {width: 100%;text-align: center;font-size: 14px;}
+  footer address br.mob {display: block;}
+  footer address span.pc {display: none;}
+  footer p.copyright {margin: 20px auto; font-size: 14px;text-align: center;}
+
+}
