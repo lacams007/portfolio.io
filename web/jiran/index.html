@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지란지교 시큐리티</title>
+  
+  <!--Style Sheet-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--Java Script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  
+</head>
+<body>
+<div class="skip_nav">
+  <a href="#main">본문 바로가기</a>
+</div>
+<div id="wrap">
+  <header>
+    <div class="header_inner">
+      <h1><a href="#"><span class="blind">지란지교시큐리티</span></a></h1>
+      <nav>
+        <ul id="gnb">
+          <li><a href="#">제품소개</a>
+            <div class="depth_wrap">
+              <ul class="g2">
+                <li><a href="#">악성코드 위협 대응</a>
+                  <ul class="g3">
+                    <li><a href="#">새니톡스</a></li>
+                    <li><a href="#">파일론</a></li>
+                    <li><a href="#">머드픽스</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">메일 보안</a>
+                  <ul class="g3">
+                    <li><a href="#">스팸스나이퍼</a></li>
+                    <li><a href="#">메일스크린</a></li>
+                    <li><a href="#">제이폴트 플러스</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">문서 보안</a>
+                  <ul class="g3">
+                    <li><a href="#">다큐원</a></li>
+                    <li><a href="#">오피스하드 VEX</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">모바일 보안</a>
+                  <ul class="g3">
+                    <li><a href="#">모바일키퍼</a></li>
+                    <li><a href="#">메일세이퍼</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">블록체인</a>
+                  <ul class="g3">
+                    <li><a href="#">제이볼트 체인</a></li>
+                    <li><a href="#">디센트</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">문서검색/문서필터</a>
+                  <ul class="g3">
+                    <li><a href="#">다큐엑스</a></li>
+                    <li><a href="#">딥아이알</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="find_solution">
+                <a href="#">솔루션 찾기</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">보안센터</a>
+            <div class="depth_wrap">
+              <ul class="g2">
+                <li><a href="#">스팸메일 동향 분석</a></li>
+                <li><a href="">보안 라이브러리</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">홍보센터</a>
+            <div class="depth_wrap">
+              <ul class="g2">
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">블로그</a></li>
+                <li><a href="#">홍보영상</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">투자정보</a>
+            <div class="depth_wrap">
+              <ul class="g2">
+                <li><a href="#">주가정보</a></li>
+                <li><a href="#">공시정보</a></li>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">IR자료</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="header_util">
+          <ul class="corp_menu">
+            <li><a href="#">회사소개</a>
+              <div class="depth_wrap">
+                <ul class="dep2">
+                  <li><a href="#">회사정보</a></li>
+                  <li><a href="#">걸어온 길</a></li>
+                  <li><a href="#">인재채용</a></li>
+                  <li><a href="#">문의</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul><!--//header 회사소개-->
+          <div class="header_search">
+            <button class="btn_search"><span class="blind">검색</span></button>
+            <form action="#" method="get">
+              <fieldset>
+                <legend class="blind">통합 검색</legend>
+                <input type="text" class="search_txt" placeholder="검색어를 입력하세요">
+                <input type="submit" class="search_submit" value="">
+              </fieldset>
+              <div class="quick_search">
+                <i class="quick_search_tit">Quick Links</i>
+                <span>문서</span>
+                <span>AI</span>
+                <span>피싱</span>
+                <span>악성 문서</span>
+                <span>이메일 보안</span>
+              </div>
+              <button class="search_close"><span class="blind">검색창 닫기</span></button>
+            </form>
+          </div><!--//header_search-->
+          <div class="allmenu_wrap">
+            <button class="btn_allmenu"><span class="blind">전체메뉴 보기</span></button>
+            <div class="allmenu">
+              <ul class="a1 clrfix">
+                <li class="m_on"><a href="#">제품소개</a>
+                  <ul class="a2">
+                    <li><a href="#">악성코드 위협 대응</a>
+                      <ul class="a3">
+                        <li><a href="#">새니톡스</a></li>
+                        <li><a href="#">파일론</a></li>
+                        <li><a href="#">머드픽스</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">메일 보안</a>
+                      <ul class="a3">
+                        <li><a href="#">스팸스나이퍼</a></li>
+                        <li><a href="#">메일스크린</a></li>
+                        <li><a href="#">제이폴트 플러스</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">문서 보안</a>
+                      <ul class="a3">
+                        <li><a href="#">다큐원</a></li>
+                        <li><a href="#">오피스하드 VEX</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">모바일 보안</a>
+                      <ul class="a3">
+                        <li><a href="#">모바일키퍼</a></li>
+                        <li><a href="#">메일세이퍼</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">블록체인</a>
+                      <ul class="a3">
+                        <li><a href="#">제이볼트 체인</a></li>
+                        <li><a href="#">디센트</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">문서검색/필터</a>
+                      <ul class="a3">
+                        <li><a href="#">다큐엑스</a></li>
+                        <li><a href="#">딥아이알</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">보안센터</a>
+                  <ul class="a2">
+                    <li><a href="#">스패메일 동향 분석</a></li>
+                    <li><a href="">보안 라이브러리</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">홍보센터</a>
+                  <ul class="a2">
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">블로그</a></li>
+                    <li><a href="#">홍보영상</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">투자정보</a>
+                  <ul class="a2">
+                    <li><a href="#">주가정보</a></li>
+                    <li><a href="#">공시정보</a></li>
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">IR자료</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">회사소개</a>
+                  <ul class="a2">
+                    <li><a href="#">회사정보</a></li>
+                    <li><a href="#">걸어온 길</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">문의</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="all_foot">
+                <a href="#">개인정보처리방침</a>
+                <a href="#" class="blank_link" target="_blank">윤리경영</a>
+              </div>
+              <div class="find_solution">
+                <a href="#">기업에 맞는 솔루션 찾기</a>
+              </div>
+              <button class="allmenu_close"><span class="blind">전체메뉴 닫기</span></button>
+            </div><!--//allmenu-->
+          </div><!--//allmenu_wrap-->
+        </div><!--//header_util-->
+      </nav>
+    </div><!--//.header_inner-->
+  </header>
+  <main id="main">
+    <h2 class="blind">지란지교 홈페이지 안내</h2>
+    <section class="visual_wrap">
+      <div class="container">
+        <div class="vis_cont">
+          <div class="visual_txt">
+            <strong>JIRANSECURITY</strong>
+            <em>사람이 있고, <br>보안이 있습니다.</em>
+            <p>지란지교시큐리티의 보안 기술은 사람을 보호하는 것에서 출발합니다.<br>
+              오늘도 우리는 기술을 넘어 보안 인식에 대한 공유와 협력을 꿈꿉니다.</p>
+          </div>
+          <video src="media/JS_main_movie_2021.mp4" autoplay muted loop></video>
+        </div>
+      </div><!--//.container-->
+    </section><!--//.visual_wrap-->
+    <section class="solution_wrap">
+      <div class="container">
+        <h3>오늘보다 더 안전한 내일을 만드는 <br class="mo_br"> 지란지교시큐리티</h3>
+        <p>지란지교시큐리티의 보안 솔루션을 만나보세요.</p>
+        <ul class="solution clrfix">
+          <li>
+            <div class="ico_img"></div>
+            <strong>악성코드 위협 대응</strong>
+            <p>위협 탐지, 차단, 예방으로 <br> 악성 위협에 선제 대응하세요</p>
+            <ul class="prod_list">
+              <li>새니톡스</li>
+              <li>파일론</li>
+              <li>머드픽스</li>
+            </ul>
+          </li>
+          <li>
+            <div class="ico_img"></div>
+            <strong>메일 보안</strong>
+            <p>고도화, 지능화되고 있는 <br> 이메일 보안 위협에 대응하세요</p>
+            <ul class="prod_list">
+              <li>스팸스나이퍼</li>
+              <li>메일스크린</li>
+              <li>제이볼트 플러스</li>
+            </ul>
+          </li>
+          <li>
+            <div class="ico_img"></div>
+            <strong>문서 보안</strong>
+            <p>기업의 정보자산을 <br> 체계적으로 관리하세요</p>
+            <ul class="prod_list">
+              <li>다큐원</li>
+              <li>오피스하드 VEX</li>
+            </ul>
+          </li>
+          <li>
+            <div class="ico_img"></div>
+            <strong>모바일 보안</strong>
+            <p>모바일을 통한 <br> 기업 정보 유출을 방지하세요</p>
+            <ul class="prod_list">
+              <li>모바일키퍼</li>
+              <li>메일세이퍼</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="more"><a href="#" class="more_btn">솔루션 찾기</a></div>
+      </div><!--//.container-->
+    </section><!--//.solution_wrap-->
+    <section class="movie_wrap">
+      <div class="container">
+        <div class="movie_cont">
+          <div class="movie_txt">
+            <h3>보안 가치를 밝히는 <br class="pc_br"> 지란지교시큐리티</h3>
+            <p>100년 가는 보안SW 전문기업<br class="pc_br"> 지란지교시큐리티가 깨끗하고 안전한 <br>보안세상을 만들어 갑니다.</p>
+            <a href="#" class="more_vod">영상 더보기</a>
+          </div>
+          <!-- <iframe width="840" height="470" src="https://www.youtube.com/embed/V9X4PoXmBuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+      </div><!--//.container-->
+    </section><!--.movie_wrap-->
+    <section class="customer_wrap">
+      <div class="container">
+        <h3>고객사 이야기</h3>
+        <p>지란지교시큐리티 고객사의 목소리를 직접 들어보세요</p>
+        <!---->
+        <div class="customer_slider">
+          <ul>
+            <li><a href="#">
+              <div class="customer_tit">
+                <div class="customer_info">
+                  <img src="img/logo_customer_1.png" alt="현대로템" class="customer_logo">
+                  <span class="customer_name">현대 로템</span>
+                </div>
+                <img src="img/img_customers_docuone.png" alt="도큐원" class="prod_logo">
+              </div><!--//box_top-->
+              <p>다큐원을 통해 파일 저장 시 전임 사용자의 모든 파일을 후임 사용자에게 안전하게 인수/인계할 수 있어 파일 유실을 막을 수 있었어요. 또한 파일 업로드 시 개인정보 검출을 통하여 정보보호를 안전하게 지킬 수 있으며, 외부 반출 시 결재/승인 프로세스를 통하여 내부 파일 또한 안전하게 지킬 수 있게 되었어요. 업무 상 협업이 많은데 공유폴더를 통하여 효율적으로 업무를 임할 수 있어 업무처리 향상에 큰 도움 되었답니다.</p>
+              <span class="customer_team">보안 인프라팀</span></a>
+            </li>
+            <li>
+              <div class="customer_tit">
+                <div class="customer_info">
+                  <img src="img/logo_customer_2.png" alt="월드비젼" class="customer_logo">
+                  <span class="customer_name">월드비젼</span>
+                </div>
+                <img src="img/img_customers_mobilekeeper.png" alt="모바일키퍼" class="prod_logo">
+              </div><!--//box_top-->
+              <p>다큐원을 통해 파일 저장 시 전임 사용자의 모든 파일을 후임 사용자에게 안전하게 인수/인계할 수 있어 파일 유실을 막을 수 있었어요. 또한 파일 업로드 시 개인정보 검출을 통하여 정보보호를 안전하게 지킬 수 있으며, 외부 반출 시 결재/승인 프로세스를 통하여 내부 파일 또한 안전하게 지킬 수 있게 되었어요. 업무 상 협업이 많은데 공유폴더를 통하여 효율적으로 업무를 임할 수 있어 업무처리 향상에 큰 도움 되었답니다.</p>
+              <span class="customer_team">ICT 기획팀</span>
+            </li>
+            <!-- <li>
+              <div class="customer_tit">
+                <div class="customer_info">
+                  <img src="img/logo_customer_3.png" alt="대교" class="customer_logo">
+                  <span class="customer_name">대교</span>
+                </div>
+                <img src="img/img_customers_officehardvex.png" alt="오피스하드 VEX" class="prod_logo">
+              </div>
+              <p>다큐원을 통해 파일 저장 시 전임 사용자의 모든 파일을 후임 사용자에게 안전하게 인수/인계할 수 있어 파일 유실을 막을 수 있었어요. 또한 파일 업로드 시 개인정보 검출을 통하여 정보보호를 안전하게 지킬 수 있으며, 외부 반출 시 결재/승인 프로세스를 통하여 내부 파일 또한 안전하게 지킬 수 있게 되었어요. 업무 상 협업이 많은데 공유폴더를 통하여 효율적으로 업무를 임할 수 있어 업무처리 향상에 큰 도움 되었답니다.</p>
+              <span class="customer_team">IT팀</span>
+            </li>
+            <li>
+              <div class="customer_tit">
+                <div class="customer_info">
+                  <img src="img/logo_customer_4.png" alt="기업" class="customer_logo">
+                  <span class="customer_name">C ICT 전문기업</span>
+                </div>
+                <img src="img/img_customers_spamsniper.png" alt="스팸스나이퍼" class="prod_logo">
+              </div>
+              <p>다큐원을 통해 파일 저장 시 전임 사용자의 모든 파일을 후임 사용자에게 안전하게 인수/인계할 수 있어 파일 유실을 막을 수 있었어요. 또한 파일 업로드 시 개인정보 검출을 통하여 정보보호를 안전하게 지킬 수 있으며, 외부 반출 시 결재/승인 프로세스를 통하여 내부 파일 또한 안전하게 지킬 수 있게 되었어요. 업무 상 협업이 많은데 공유폴더를 통하여 효율적으로 업무를 임할 수 있어 업무처리 향상에 큰 도움 되었답니다.</p>
+              <span class="customer_team">보안 인프라팀</span>
+            </li> -->
+          </ul>
+        </div>
+        <div class="dir_btns">
+          <button class="prev_btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <button class="next_btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+        <!---->
+        <div class="dot_btns">
+          <button class="dot_on"></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div><!--//.container-->
+    </section><!--//.customer_wrap-->
+    <section class="news_wrap">
+      <div class="container">
+        <h3>최신 소식</h3>
+        <p>지란지교시큐리티의 생생한 최신 소식을 만나보세요.</p>
+        <ul class="clrfix">
+          <li><a href="#">
+            <span class="label">뉴스</span>
+            <img src="img/news_1.png" alt="">
+            <div class="news_txt">
+              <p>지란지교시큐리티, 고용노동부 주관 ‘2021 워라밸 실천 우수...</p>
+              <span class="date">2021-11-30</span>
+              <span class="press">아이티데일리</span>
+            </div>
+          </a></li>          
+          <li><a href="#">
+            <span class="label">뉴스</span>
+            <img src="img/news_2.jpg" alt="">
+            <div class="news_txt">
+              <p>지란지교시큐리티, 가트너 보고서 'CDR' 기술 부문 벤더 등재</p>
+              <span class="date">2021-11-02</span>
+              <span class="press">보안뉴스</span>
+            </div>
+          </a></li>
+          <li><a href="#">
+            <span class="label">뉴스</span>
+            <img src="img/news_3.png" alt="">
+            <div class="news_txt">
+              <p>국내 모바일 보안 1위 '모바일키퍼 4.0' 조달청 나라장터 등록</p>
+              <span class="date">2021-09-29</span>
+              <span class="press">전자신문</span>
+            </div>
+          </a></li>
+        </ul>
+        <div class="more"><a href="#" class="more_btn">관련 뉴스 더보기</a></div>
+      </div><!--//.container-->
+    </section><!--//.news_wrap-->
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer_menu clrfix">  
+        <div class="famly_site">
+          <button>Family Site <img src="img/ico-footer-familysite-on.png" alt=""></button>
+          <ul>
+            <li><a href="#" target="_blank">지란지교 소프트</a></li>
+            <li><a href="#" target="_blank">지란지교 파트너스</a></li>
+            <li><a href="#" target="_blank">지란 재팬</a></li>
+            <li><a href="#" target="_blank">에스에스알</a></li>
+            <li><a href="#" target="_blank">모비젠</a></li>
+          </ul>
+        </div>      
+        <ul class="footer_list">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">윤리경영</a></li>
+        </ul>   
+      </div><!--//.footer_menu-->
+      <div class="corp_info">
+        <ul class="sns">
+          <li><a href="#" target="_blank"><img src="img/ico_footer_facebook@2x.png" alt="페이스북"></a></li>
+          <li><a href="#" target="_blank"><img src="img/ico_footer_youtube@2x.png" alt="YouTube"></a></li>
+          <li><a href="#" target="_blank"><img src="img/ico_footer_blog@2x.png" alt="블로그"></a></li>
+        </ul>
+        <address>            
+          <span>(주)지란지교시큐리티</span>  l  대표자명 : 윤두식  l  사업자등록번호 : 107-88-31670  |  대표전화 : 02-569-6110  |  팩스 : 02-569-6117 
+          <br><br>
+          <span>서울본사 </span> 06187 서울특별시 강남구 역삼로 542 신사S&G빌딩 5층  |  <span>대전사무소</span>  34016 대전광역시 유성구 테크노3로 65 한신S메카 518호 <br>
+          <span>영남지사 </span> 48058 부산광역시 해운대구 센텀서로 30 KNN빌딩 1501호
+        </address>
+        <p class="copyright">Copyright©JiranSecurity. All Rights Reserved</p>      
+      </div><!--//.corp_info--> 
+    </div><!--//.container-->    
+  </footer>
+  <div class="fix_btns">
+    <a href="#" class="go_inquire"><span class="blind">문의하기</span></a>
+    <a href="#" class="go_top"><span class="blind">Top</span></a>
+  </div>
+</div><!--//#wrap-->
+</body>
+</html>
+
+
