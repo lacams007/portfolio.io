@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+/*font-family: 'Josefin Sans';*/
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+/*font-family: 'Patua One';*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/*font-family: 'Bree Serif';*/
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+/*font-family: 'Secular One';*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+/* common */
+body {font-family: 'Secular One','Noto Sans KR', '맑은 고딕', sans-serif;}
+.container {width: 80%;margin: auto;}
+.blind {display: block;width: 0px;height: 0px;overflow: hidden;}
+main section {min-height: 100vh;color: #333;}
+main section h2 {margin-bottom: 20px;padding-top: 120px;text-align: center;font-size: 32px;font-weight: 700;text-transform: uppercase;user-select: none;}
+
+
+
+
+
+/* header */
+header {
+  position: fixed;
+  padding: 30px 5%;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  z-index: 999;
+  color: #fff;
+}
+header h1 {
+  float: left;
+  width: 162px;
+  height: 30px;
+  background: url(../img/i_logo.png) no-repeat;
+  background-size: contain !important;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+header #gnb {float: right;font-size: 28px;font-weight: 700;}
+header #gnb li {
+  float: left;
+  margin-right: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+/* 헤더 스타일 변경 */
+header.bgOn {
+  padding: 30px 5%;
+  background: #000;
+  border-bottom: 1px solid #000;
+  transition: all 0.5s;
+}
+header.bgOn h1 {
+  width: 162px;
+  height: 30px;
+  background: url(../img/../img/i_logo.png) no-repeat;
+  transition: all 0.5s;
+}
+header.bgOn #gnb li {transition: all 0.5s;}
+
+
+
+/* main Home */
+#home {
+  height: 100vh;
+  padding-top: 0;
+  background: url(../img/20211109_170804992_03.png) center;
+  background-size: cover;
+  user-select: none;
+}
+#home .homeBg {
+  position: relative;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  color: #FFF;
+  text-align: center;
+}
+#home .homeTxt {
+  position: absolute;
+  left: 50%;top: 50%;
+  transform: translate(-50%, -80%)
+}
+
+
+/* main About */
+#about {background: #f2f2f2;}
+#about .introduce {float: left;padding-top: 150px;}
+#about .introduce .introTxt {float: right;}
+#about .introduce .introTxt h3 {
+  margin: 50px 0 20px 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#about .introduce .introTxt h3::before {
+  content: "";
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 5px;
+  height: 15px;
+  background: #000;
+}
+#about .introduce img {width: 30%;border-radius: 50%;}
+#about .introduce .introTxt li {font-weight: 500;line-height: 30px;}
+
+
+/* main Work */
+#work {}
+#work .tabs {margin: 50px 0;width: 100%;height: 30px;text-align: center;}
+#work .tabs li {
+  display: inline-block;
+  position: relative;
+  margin: 0 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#work .tabs li.on {color: #bbb;}
+#work .tabs li.on:after {
+  content: "";display: none;
+  position: absolute;
+  height: 3px;
+  background: #f2f2f2;
+  /* left: 0;right: 0;bottom: -7px; */
+}
+#work .workThumb {padding-bottom: 50px;}
+#work .workThumb li {
+  float: left;
+  position: relative;
+  width: 300px;
+  max-height: 400px;
+  margin: 10px;
+  overflow: hidden;
+}
+#work .workThumb img {width: 100%;}
+#work .workThumb span {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  text-align: center;
+}
+#work2 .workThumb strong {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+#work2 .workThumb i {
+  display: block;
+  margin-top: 15px;
+}
+
+
+
+/* main Contact */
+#contact {background: #f2f2f2;}
+#contact .address {padding-top: 50px;left: 0;width: 50%;float: left;margin-top: 220px;}
+#contact .address li {line-height: 100px;font-size: 24px;padding-left: 100px;}
+#contact .container {position: relative;}
+#contact .container>a {
+  position: absolute;
+  margin-top: 200px;
+  clear: right;
+  width: 420px;
+  height: 420px;
+  right: 0;
+}
+#contact .container a img {position: absolute;right: 0;}
+
+
+
+/* footer */
+footer {
+  background: #000;
+  text-align: center;
+}
+footer p {
+  line-height: 20px;
+  padding-top: 50px;
+  color: #fff;
+}
+footer .copyright {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
