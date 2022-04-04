@@ -1,0 +1,228 @@
+@import url('all.css');
+@import url('reset.css');
+@import url('common.css');
+
+/* 사이드바 */
+div.sideBar{
+    position: relative;
+    display: block;
+}
+div.sideBar>div.menu{
+    background-color: #000;
+    width: 0%;
+    height: 100vh;
+    top: 0;right: 0;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: fixed;
+    transition: all 0.5s;
+}
+div.sideBar>input{
+    display: none;
+}
+div.sideBar>input:checked+div.menu{
+    width: 30%;
+    z-index: 1;
+}
+div.sideBar>div.menu>ul.menu{
+    width: 100%;
+}
+div.sideBar>div.menu>ul.menu>li{
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 컨텐츠 공통영역 */
+div.cntWrap{
+    margin-top: 120px;
+}
+div.cntWrap div.content{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+div.cntWrap div.header h2{
+    font-size: 36px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+div.cntWrap div.header p{
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+    width: calc(100% / 12 * 4.1);
+    margin: 0 auto;
+}
+
+div.cntWrap div.section{
+    margin-top: 80px;
+}
+div.cntWrap div.section h3{
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+div.cntWrap div.section h5{
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+div.cntWrap div.section p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/* 컨텐츠 1 */
+div.cnt01 div.section{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+div.cnt01 div.article{
+    display: flex;
+    align-items: center;
+    height: 360px;
+}
+div.cnt01 div.article:nth-of-type(1){
+    direction: rtl;
+    /*알투엘, 방향바꾸는것 right to left*/
+}
+div.cnt01 div.image{
+    width: calc(100% / 12 * 8);
+    height: 360px;
+    border-radius: 0 200px 200px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cnt01 div.image.i1{
+    background-image: url('../image/56286231860924820506dd.jpeg');
+}
+div.cnt01 div.image.i2{
+    background-image: url('../image/Main2-2.jpg');
+}
+div.cnt01 div.article:nth-of-type(2) div.image{
+    border-radius: 200px 0 0 200px;
+}
+div.cnt01 div.texts{
+    width: 50%;
+    height: 280px;
+    padding: 40px calc(100% / 12);
+    box-shadow: 2px 2px 4px rgba(0,0,0.7);
+    margin-left: calc( 100% / 12 * -2);
+    background-color: #000;
+    color: lightgray;
+}
+
+div.cnt01 div.article:nth-of-type(1) div.texts{
+    margin-left: 0;
+    margin-right: calc( 100% / 12 * -2);
+}
+div.cnt01 div.article div.sns{
+    line-height: 40px;
+    font-size: 20px;
+}
+div.cnt01 div.article div.sns i{
+    cursor: pointer;
+}
+
+/* 컨텐츠 2 */
+div.cnt02 div.article{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+div.cnt02 div.thumbImg{
+    width: 100%;
+    height: 440px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../image/Vans_S21_Liberty-Fabrics-04.jpg');
+    transition: all 0.5s;
+}
+div.cnt02 div.thumbs div.thImg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cnt02 div.thumbs div.thImg.i1{
+    background-image: url('../image/Vans_S21_Liberty-Fabrics-04.jpg');
+}
+div.cnt02 div.thumbs div.thImg.i2{
+    background-image: url('../image/vans-F20-tiger-patchwork-era-8.jpg');
+}
+div.cnt02 div.thumbs div.thImg.i3{
+    background-image: url('../image/Main_Vans_HO21_Authentic.jpg');
+}
+div.cnt02 div.thumbs div.thImg.i4{
+    background-image: url('../image/Main_2-1.jpg');
+}
+div.cnt02 div.thumbs div.thImg.i5{
+    background-image: url('../image/Main_Vans_HO21_AuthenticChino.jpg');
+}
+div.cnt02 div.thumbs div.thImg.i6{
+    background-image: url('../image/1762451741609deb74a8ccc.jpeg');
+}
+div.cnt02 div.texts{
+    width: 100%;
+    background-color: #000;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    color: lightgray;
+}
+
+div.cnt02 div.thumbs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+div.cnt02 div.thumbs div.thImg{
+    width: calc(100% / 6 - 20px);
+    height: 80px;
+    background-color: #ccc;
+    color: transparent;
+    cursor: pointer;
+}
+
+
+/* 컨텐츠 3 */
+div.cnt03 div.article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.cnt03 div.article div.image{
+    width: calc(100% / 12 * 8);
+    background-color: #ccc;
+    direction: rtl;
+}
+div.cnt03 div.article div.image div.ovrGrid{
+    width: calc((100vw - 1080px) / 2 + 100%);
+    min-width: calc((100vw - 80vw) / 2 + 100%);
+    height: 400px;
+    background-image: url('../image/vans_genzo2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cnt03 div.article div.texts{
+    width: calc(100% / 12 * 4 - 20px);
+    text-align: center;
+}
+div.cnt03 div.article div.texts p{
+    height: 120px;
+    overflow: hidden;
+}

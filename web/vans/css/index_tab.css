@@ -1,0 +1,102 @@
+
+/* 헤더 */
+/* div.hdrWrap>div.header{
+    width: 90%;
+}
+div.hdrWrap>div.header>div.logo{
+    width: calc(100% / 8 * 2);
+} */
+
+
+/* 메인 */
+div.mnWrap>div.imgView{
+    height: 480px;
+}
+div.mnWrap>div.imgView>div.imgGroup>div.image{
+    height: 480px;
+}
+div.mnWrap>div.main{
+    width: 90%;
+    margin-top: -240px;
+    height: 240px;
+}
+div.mnWrap>div.main>div.noteView>div.noteGroup>p{
+    width: calc(100% / 8 * 5);
+}
+
+/* 컨텐츠 공통영역 */
+div.cntWrap{
+    margin-top: 40px;
+}
+div.cntWrap>div.content{
+    width: 90%;
+}
+
+/* 컨텐츠 1 */
+div.cntWrap>div.content.cnt01>div.header>ul.menu{
+    width: calc(100% / 8 * 4);/*50%*/
+}
+div.cntWrap>div.content.cnt01>div.header>ul.menu>li:nth-of-type(5){
+    margin: 0 5px;
+}
+div.cntWrap>div.content.cnt01>div.section{
+    width: calc(100% / 8 * 6);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.artGroup{
+    width: 300%;
+}
+div.cntWrap>div.content.cnt01>div.btns{
+    width: 100%;
+    left: 0;
+}
+
+/* 컨텐츠 2 */
+div.cntWrap>div.content.cnt02>div.section>div.article>div.checked+div{
+    height: 120px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div:nth-child(even)>div.image{
+    display: none;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div:nth-child(even)>p{
+    width: calc(100% / 8 * 6.5);
+    margin-left: calc(100% / 12);
+    margin-top: 20px;
+}
+
+/* 컨텐츠 3 */
+div.cntWrap>div.content.cnt03>div.section{
+    height: 580px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.article{
+    width: calc(50% - 20px);
+}
+div.cntWrap>div.content.cnt03>div.section>div.article:nth-of-type(2)~div.article{
+    margin-top: 20px;
+}
+
+/* 푸터 */
+/* div.ftrWrap{
+    margin-top: 60px;
+}
+div.ftrWrap>div.footer{
+    width: 90%;
+}
+div.ftrWrap>div.footer>div.logo{
+    width: calc(100% / 8 * 2);
+}
+div.ftrWrap>div.footer>p{
+    width: calc(100% / 8 * 5);
+}
+div.ftrWrap>div.footer>div.selector{
+    width: calc(100% / 8 * 5.5);
+}
+div.ftrWrap>div.footer>div.selector>select{
+    display: none;
+}
+div.ftrWrap>div.footer>div.selector>div.sns{
+    text-align: left;
+    margin-top: 0;
+    line-height: 80px;
+} */

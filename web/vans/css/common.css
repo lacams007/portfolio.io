@@ -1,0 +1,174 @@
+/* 헤더 */
+div.hdrWrap{
+    background-color: #fff;
+}
+div.hdrWrap>div.header{
+    width: 80%;
+    max-width: 1080px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+div.hdrWrap>div.header>div.logo{
+    float: left;
+    width: calc(100% / 12 * 2);
+    height: 90px;
+    margin-top: 20px;
+    background-image: url('../image/2021-vans-logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+div.hdrWrap>div.header>div.logo>a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    color: transparent;
+}
+div.hdrWrap>div.header>ul.nav{
+    float: right;
+}
+div.hdrWrap>div.header>ul.nav>li{
+    float: left;
+    line-height: 120px;
+    text-transform: uppercase;
+    margin-left: 35px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Patua One';
+
+}
+div.hdrWrap>div.header>ul.nav>li:nth-of-type(4){
+    display: none;
+}
+
+
+
+
+
+/* 푸터 */
+div.ftrWrap{
+    margin-top: 120px;
+    background-color: #fff;
+    padding: 80px 0 40px 0;
+
+}
+div.ftrWrap>div.footer{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    height: 120px;
+}
+div.ftrWrap>div.footer>div.logo{
+    width: calc(100% / 12 * 2);
+    height: 90px;
+    float: left;
+    background-image: url('../image/2021-vans-logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+div.ftrWrap>div.footer>p{
+    width: calc(100% / 12 * 4.5);
+    float: left;
+    margin-left: calc(100% / 12);
+    height: 80px;
+    overflow: hidden;
+    font-family: 'Josefin Sans';
+}
+div.ftrWrap>div.footer>div.selector{
+    width: calc(100% / 12 * 4);
+    float: right;
+}
+div.ftrWrap>div.footer>div.selector>select{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Bree Serif';
+}
+div.ftrWrap>div.footer>div.selector>select>option{
+    height: 40px;
+    font-size: 16px;
+}
+div.ftrWrap>div.footer>div.selector>div.sns{
+    text-align: right;
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 20px;
+}
+div.ftrWrap>div.footer>div.selector>div.sns>i{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+/* 태블릿 */
+@media (min-width:0px) and (max-width:780px){
+    div.hdrWrap>div.header{
+        width: 90%;
+    }
+    div.hdrWrap>div.header>div.logo{
+        width: calc(100% / 8 * 2);
+    }
+    div.ftrWrap{
+        margin-top: 60px;
+    }
+    div.ftrWrap>div.footer{
+        width: 90%;
+    }
+    div.ftrWrap>div.footer>div.logo{
+        width: calc(100% / 8 * 2);
+    }
+    div.ftrWrap>div.footer>p{
+        width: calc(100% / 8 * 5);
+    }
+    div.ftrWrap>div.footer>div.selector{
+        width: calc(100% / 8 * 5.5);
+    }
+    div.ftrWrap>div.footer>div.selector>select{
+        display: none;
+    }
+    div.ftrWrap>div.footer>div.selector>div.sns{
+        text-align: left;
+        margin-top: 0;
+        line-height: 80px;
+    }
+}
+
+
+/* 모바일 */
+@media (min-width:0px) and (max-width:430px){
+    div.hdrWrap>div.header{
+        height: 80px;
+    }
+    div.hdrWrap>div.header>div.logo{
+        width: 30%;
+        margin-top: 0;
+    
+    }
+    div.hdrWrap>div.header>ul.nav>li{
+        display: none;
+        line-height: 80px;
+    }
+    div.hdrWrap>div.header>ul.nav>li:nth-of-type(4){
+        display: block;
+    }
+    div.ftrWrap{
+        margin-top: 40px;
+        padding: 40px 0;
+    }
+    div.ftrWrap>div.footer>div.logo{
+        width: 50%;
+        margin-left: calc(100% / 4);
+    }
+    div.ftrWrap>div.footer>p{
+        display: none;
+    }
+}
