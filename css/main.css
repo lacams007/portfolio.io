@@ -153,14 +153,14 @@ header.bgOn #gnb li {transition: all 0.5s;}
   color: #fff;
   text-align: center;
 }
-#work2 .workThumb strong {
+#work .workThumb strong {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
 }
-#work2 .workThumb i {
+#work .workThumb i {
   display: block;
   margin-top: 15px;
 }
