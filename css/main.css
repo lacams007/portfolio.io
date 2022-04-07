@@ -92,7 +92,8 @@ header.bgOn #gnb li {transition: all 0.5s;}
 
 /* main About */
 #about {background: #f2f2f2;}
-#about .introduce {float: left;padding-top: 150px;}
+#about .introduce {float: left;padding-top: 100px;width: 100%;}
+#about .introduce img {width: 500px;border-radius: 50%;}
 #about .introduce .introTxt {float: right;}
 #about .introduce .introTxt h3 {
   margin: 50px 0 20px 0;
@@ -109,7 +110,6 @@ header.bgOn #gnb li {transition: all 0.5s;}
   height: 15px;
   background: #000;
 }
-#about .introduce img {width: 30%;border-radius: 50%;}
 #about .introduce .introTxt li {font-weight: 500;line-height: 30px;}
 
 
